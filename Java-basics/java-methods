@@ -1,2 +1,9 @@
 A method/function is a block of code is used to perform certain actions and only runs when it is called.
 
+Create a method inside Main:
+
+public class Main {
+  static void myMethod() {
+    // code to be executed
+  }
+}
