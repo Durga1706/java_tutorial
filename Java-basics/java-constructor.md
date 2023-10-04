@@ -14,53 +14,62 @@ It is a special type of method which is used to initialize the object. Every tim
 1. Default constructor (no-arg constructor)
 2. Parameterized constructor
 
-1. Default constructor
-   class Student{
-      Student(){
-          System.out.println("Student class is created");
-       }
-    }
-   public class constructor{
-      Student s1=new Student(1, "Durga");
-   }
+Default constructor
    
-2. Parameterized constructor
-   class Student{
-      Student(int id,String name){
-          System.out.println("Hello "+name+" your id is "+id);
-       }
-    }
-   public class constructor{
-      Student s1=new Student(1, "Durga");
-   }
+class Student{  
+int id;  
+String name;  
+//method to display the value of id and name  
+Student(){System.out.println(id+" "+name);}  
+  
+public static void main(String args[]){  
+//creating objects  
+Student s1=new Student();  
+Student s2=new Student();  
+//displaying values of the object  
+s1.display();  
+s2.display();  
+}  
+}  
+   
+Parameterized constructor
 
-   ### Constructor Overloading
+class Student{
+   Student(int id,String name){
+       System.out.println("Hello "+name+" your id is "+id);
+    }
+ }
+public class constructor{
+   Student s1=new Student(1, "Durga");
+}
+
+### Constructor Overloading
    It is a technique of having more than one constructor with different parameter lists.
    
    class Student{  
       int id,age;  
       String name;  
 
-      //creating two arg constructor  
-      Student(int i,String n){  
-        id = i;  
-        name = n;  
-      }
+   //creating two arg constructor  
+   Student(int i,String n){  
+     id = i;  
+     name = n;  
+   }
    
-      //creating three arg constructor  
-      Student5(int i,String n,int a){  
-        id = i;  
-        name = n;  
-        age=a;  
-      }  
-    void display(){System.out.println(id+" "+name+" "+age);
+   //creating three arg constructor  
+   Student5(int i,String n,int a){  
+     id = i;  
+     name = n;  
+     age=a;  
    }  
+ void display(){System.out.println(id+" "+name+" "+age);
+}  
    
-    public static void main(String args[]){  
-    Student s1 = new Student(1,"Durga");  
-    Student s2 = new Student(2,"Prasad",24);  
-    s1.display();  
-    s2.display();  
-   }  
+  public static void main(String args[]){  
+  Student s1 = new Student(1,"Durga");  
+  Student s2 = new Student(2,"Prasad",24);  
+  s1.display();  
+  s2.display();  
+ }  
 }  
    
