@@ -1,9 +1,40 @@
 A method/function is a block of code is used to perform certain actions and only runs when it is called.
 
-Create a method inside Main:
-
+// Create a method inside Main:
 public class Main {
   static void myMethod() {
     // code to be executed
   }
+// Call the myMethod() method
+public static void main(String[] args) {
+    myMethod();
+  }
 }
+
+import java.util.*;
+public class methods{
+    //user defined method  
+    public static void isEven(int n){
+        if(n%2==0){
+            System.out.println("you have entered an even number");
+        }else{
+            System.out.println("you have entered an odd number");
+        }
+
+    }
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter a number");
+        int n=sc.nextInt();
+        isEven(n);
+
+
+    }
+}
+
+// types of data types
+/*
+   1. fixed size data type(primitive data types)  :- integer(byte,short, int, long), char, boolean, float, double
+   2. varying size data type(no limit) :- String, Array, Class, Oject, Interface, enumeration
+ * 
+ */
