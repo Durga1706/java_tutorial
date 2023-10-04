@@ -1,1 +1,25 @@
+public class variables {
+    char gender='m';
+    boolean isMarried=false;
+
+    public static void main(String[] args){
+        String name="Durga";
+        int age=24;
+        float salary=50000f;
+        System.out.println("My name is "+name+" I am "+age+" years old and my salary is "+salary);
+
+        int myNum=5;
+        myNum = 15;
+        final int num=5;
+        //num=10; //cannot assign a value to final variable num
+        System.out.println(myNum);
+    }
+}
+
+// types of data types
+/*
+   1. fixed size data type(primitive data types)  :- integer(byte,short, int, long), char, boolean, float, double
+   2. varying size data type(no limit) :- String, Array, Class, Oject, Interface, enumeration
+ * 
+ */
 
