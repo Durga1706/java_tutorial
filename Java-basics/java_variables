@@ -13,6 +13,20 @@ public class variables {
         final int num=5;
         //num=10; //cannot assign a value to final variable num
         System.out.println(myNum);
+
+        //swap two variables
+        String x="Durga";
+        String y="Prasad";
+        System.out.println("before swapping x= "+x);
+        System.out.println("before swapping y= "+y);
+
+        String temp;
+        temp=x;
+        x=y;
+        y=temp;
+
+        System.out.println("after swapping x= "+x);
+        System.out.println("after swapping y= "+y);
     }
 }
 
