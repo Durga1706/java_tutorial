@@ -19,6 +19,7 @@ public class Input{
         
         System.out.println("Hello "+name+" You are "+age+" years old "+" Your college name is "+col_name);
         // output Hello Durga You are 24 years old  Your college name is
+        
         // Use nextLine() 
 
         sc.nextLine();
@@ -30,3 +31,5 @@ public class Input{
     }
   
 }
+
+
