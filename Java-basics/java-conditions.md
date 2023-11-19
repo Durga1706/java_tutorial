@@ -1,3 +1,5 @@
+// https://www.freecodecamp.org/news/learn-java-object-oriented-programming/#your-first-java-program
+
 public class Conditions {
 
     public static void main(String[] args){
