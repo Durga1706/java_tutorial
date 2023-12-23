@@ -65,3 +65,40 @@ class Main {
    
  }
 }
+
+
+
+import java.util.Scanner;
+import java.lang.Math;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int m, n;
+        m = sc.nextInt();
+        n = sc.nextInt();
+
+        int a[][] = new int[m][n];
+
+        // Generate and print array elements
+        for (int i = 0; i < m; i++) {
+            for (int j = 0; j < n; j++) {
+                a[i][j] = (int) (Math.random() * 10);
+                System.out.print(a[i][j] + " "); // Print each element followed by a space
+            }
+            System.out.println(); // Move to the next line after printing all elements in a row
+        }
+
+        // Access and print array elements in a structured way
+        System.out.println("Accessing array elements ");
+        //System.out.println("a[0][1]: " + a[0][1]);
+
+        for (int i = 0; i < m; i++) {
+            for (int j = 0; j < n; j++) {
+                System.out.print(a[i][j] + " ");
+            }
+            System.out.println();
+        }
+    }
+}
+
