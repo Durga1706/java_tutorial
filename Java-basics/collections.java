@@ -49,5 +49,56 @@ public class Main {
         
         
         //2. Vector
+        Vector<Integer> v=new Vector<>();
+      ArrayList<Integer> a=new ArrayList<>();
+      
+      //System.out.println("Initially Vector size is: "+v.capacity());
+      //System.out.println("Initially ArrayList size is: "+a.size());
+      
+      v.add(10);  v.add(10);  v.add(10);  v.add(10);  v.add(10); 
+      v.add(10);  v.add(10);  v.add(10);  v.add(10);  v.add(10); 
+      
+      a.add(12);  a.add(12);  a.add(12);
+      
+      //System.out.println("after 10 ele Vector size is: "+v.capacity());
+      //System.out.println("after 2 ele ArrayList size is: "+a.size());
+      
+      v.add(10);  a.add(12);
+      
+      //System.out.println("Initially Vector size is: "+v.capacity());
+      //System.out.println("Initially ArrayList size is: "+a.size());
+      
+      // LinkedList
+      LinkedList<String> ll=new LinkedList<>();
+      ll.add("S"); ll.add("t");  ll.addFirst("A");  ll.add(1, "B");
+      
+      ll.set(2, "D");
+      
+      System.out.println("Linked list ele: "+ll);
+      
+      Iterator i=ll.descendingIterator();
+      
+      System.out.print("Linked list ele in desc order: ");
+      while(i.hasNext()){
+        System.out.print(i.next()+" ");
+      }
+      
+      System.out.println();
+      
+      // iterating list from spec pos
+      ListIterator li=ll.listIterator(1);
+      while(li.hasNext()){
+        System.out.print(li.next()+" ");
+      }
+      
+      System.out.println();
+      
+      // get the head
+      System.out.println(ll.element());
+      
+      ll.remove(2); ll.remove("t");  ll.removeLast();
+      System.out.println("Linked list ele: "+ll);
+      
+      System.out.println("Linked list contains 'A': "+ll.contains("A"));
   }
 }
