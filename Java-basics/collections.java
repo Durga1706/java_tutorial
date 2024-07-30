@@ -75,6 +75,21 @@ public class Main {
       ll.set(2, "D");
       
       System.out.println("Linked list ele: "+ll);
+
+     // new list that contains ll from last   
+     LinkedList<String> l2 = new LinkedList<>();
+        while (!ll.isEmpty()) {
+            String t = ll.poll(); // get and remove the head
+
+            // Check if ll is empty before accessing ll.get(0)
+            if (!ll.isEmpty() && t.equals(ll.get(0))) {
+                l2.offerLast(t);
+            } else {
+                l2.offerFirst(t);
+            }
+        }
+
+        System.out.println("List 2 is: " + l2);
       
       Iterator i=ll.descendingIterator();
       
