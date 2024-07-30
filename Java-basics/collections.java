@@ -68,7 +68,7 @@ public class Main {
       //System.out.println("Initially Vector size is: "+v.capacity());
       //System.out.println("Initially ArrayList size is: "+a.size());
       
-      // LinkedList
+      //3. LinkedList
       LinkedList<String> ll=new LinkedList<>();
       ll.add("S"); ll.add("t");  ll.addFirst("A");  ll.add(1, "B");
       
