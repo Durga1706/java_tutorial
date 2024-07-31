@@ -117,3 +117,42 @@ public class Main {
       System.out.println("Linked list contains 'A': "+ll.contains("A"));
   }
 }
+
+
+
+// ---------------------------  Stack  ---------------------------------
+public class Stack {
+    public static void main(String[] args) {
+      Stack<Integer> s=new Stack<>();
+      
+      s.push(10);   s.push(20);  s.push(30);   s.push(40);  s.push(50);
+      System.out.println("Stack elements are: "+s);
+      
+      System.out.println(s.peek()+" is the top element. ");
+      s.pop();
+      
+      System.out.println("\nStack elements after pop one element are: "+s);
+      System.out.println("40 found at pos "+s.indexOf(40)+" from beginning.");
+
+      
+      int pos=s.search(40);
+      
+      if(pos==-1){
+        System.out.println("not found.");
+      }
+      else{
+        System.out.println(s.get(s.size()-pos)+" found at pos "+pos+" from last.");
+      }
+      
+      System.out.println("\nIterating Stack");
+      for(int i:s){
+        System.out.print(i+"->");
+      }
+       
+      System.out.println();
+      // popping elements one by one
+      while(!s.isEmpty()){
+        System.out.print(s.pop()+" ");
+      }
+  }
+}
