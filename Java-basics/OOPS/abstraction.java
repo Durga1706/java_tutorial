@@ -4,12 +4,11 @@ class Main{
         a.m1();
         a.m2();
         System.out.println(a.m3());
-        
-        
     }
 }
 
 abstract class Abstraction{
+    // abstract methods do not have a body
     public abstract void m1();            // Now I don't know wt to do at this time
     public abstract int m3();
     
@@ -46,7 +45,7 @@ class Main{
 }
 
 interface I{
-    void m1();  // by default it is public abstract
+    void m1();  // by default abstract and public
     int m2();
 }
 
@@ -55,7 +54,7 @@ interface Inte{
 }
 
 class A implements I, Inte{
-    // Here we have to do all the interface methods
+    // Here we have to do all the interface methods  or must override all of its methods
     public void m1(){
         System.out.println("I am in interface at m1");
     }
