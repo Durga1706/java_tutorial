@@ -1,3 +1,4 @@
+// As array is in fixed size, also allows homogenous type of data we use collections
 import java.util.*;
 
 public class Main {
@@ -155,4 +156,28 @@ public class Stack {
         System.out.print(s.pop()+" ");
       }
   }
+}
+
+//-----------------------------------------------------------------------------------------------------
+// Map
+// Online Java Compiler
+// Use this editor to write, compile and run your Java code online
+import java.util.*;
+class Mapping {
+    public static void main(String[] args) {
+        Map<String, String[]> s=new HashMap<>();
+        s.put("Machine Learning", new String[] {"Supervised", "UnSupervised", "Reinforcement"});
+        s.put("Deep Learning", new String[] {"ANN", "CNN", "RNN", "LSTM"});
+        s.put("NLP", new String[] {"RAG", "POS", "Word2Vec"});
+        System.out.println(s.keySet());
+        
+        s.remove("NLP");
+        for(String i: s.keySet()){
+            // Printing the array contents
+            String[] values = s.get(i);
+            System.out.println(i+":- "+Arrays.toString(values));
+        }
+        
+        
+    }
 }
