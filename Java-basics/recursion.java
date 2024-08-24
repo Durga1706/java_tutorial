@@ -2,27 +2,26 @@ import java.util.*;
 class HelloWorld {
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
-        //int n=sc.nextInt();
+        int n=sc.nextInt();
         
-        // --- sum of n natural
-        // int sum=rec_sum(n);
-        // System.out.println("The sum of "+n+" numbers is "+sum);
+        // --- sum of 'n' natural numbers
+        int sum=rec_sum(n);
+        System.out.println("The sum of "+n+" numbers is "+sum);
         
         // --- factorial
-        // int fact=rec_fact(n);
-        // System.out.println("The factorial of "+n+" is "+fact);
+        int fact=rec_fact(n);
+        System.out.println("The factorial of "+n+" is "+fact);
         
         // --- fibonacci
-        // for(int i=0;i<n;i++){
-        //     System.out.print(rec_fib(i)+" ");
-        // }
+        for(int i=0;i<n;i++){
+            System.out.print(rec_fib(i)+" ");
+        }
         
         // --- HCF
         System.out.print("Enter a: ");  int a=sc.nextInt();
         System.out.print("Enter b: ");  int b=sc.nextInt();
         System.out.print(rec_hcf(a, b)+"\n");
         
-        //System.out.print(a+" "+b+" ");
         while(b!=0){
             System.out.println("(a, b): "+"("+a+","+b+")");
             int c=a;
