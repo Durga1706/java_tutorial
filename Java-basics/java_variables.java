@@ -1,3 +1,9 @@
+// Data types specifies the different values that can be stored in variables.
+  //   Primitive:- binary, byte, char, double, float, int, long, short - these are predefined by the language
+  //   Non-primitive:- arrays, classes, interfaces  -user defined
+
+   // Java is not a fully oop because of primitive data type since they are not objects
+   // because of  primitive data types java memory consumption(as they occupy a fixed amount of memory space) is very less and performance is also high
 public class variables {
     char gender='m';
     boolean isMarried=false;
