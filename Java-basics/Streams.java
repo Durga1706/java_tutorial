@@ -1,5 +1,6 @@
 import java.util.*;
 import java.util.stream.*;
+
 class Streams {
     public static void main(String[] args) {
         List<Integer> l=new ArrayList<>();
