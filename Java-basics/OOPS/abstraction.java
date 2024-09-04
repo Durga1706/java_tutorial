@@ -99,3 +99,34 @@ class Main {
 interface Animal{
     String m1(String name);
 }
+
+// ------------------------------------------------------------------------------------------------------------------------------------------------
+
+// Method reference
+// Use when we have a functional interface(an interface with only one method) and useful when we want to pass methods as arguments or store them in variables
+
+class Main {
+    public void m1(){
+        System.out.println("Hello World!");
+    }
+    
+    public static void main(String[] args) {
+        List<String> l=Arrays.asList("Durga", "SriVastava", "Balaji");
+        l.forEach(n-> System.out.println(n));
+        System.out.println();
+        
+        // method reference
+          // Syntax: referencce::method name
+          // as println is a method of 'out' of System
+        l.forEach(System.out::println);
+        
+        System.out.println();
+        Main h=new Main();
+        
+        // Using method reference with a functional interface
+        Runnable r = h::m1;  // Runnable is a functional interface
+        r.run();  // This will call the m1() method 
+    }
+}
+
+
